@@ -43,12 +43,12 @@
 <!--Display input-->
             <h4>Enter your number here:
           <input type="text" id="userInput"></input>
-    <button id="submitter">Submit</button>
+    <button id="submitter">Ping Pong</button>
     <div id="output"></div>
     <script>
         var didClickIt = false;
         document.getElementById("submitter").addEventListener("click",function(){
-            // same as onclick, keeps the JS and HTML separate
+
             didClickIt = true;
         });
 
@@ -56,7 +56,7 @@
             // this is the closest you get to an infinite loop in JavaScript
             if( didClickIt ) {
                 didClickIt = false;
-                // document.write causes silly problems, do this instead (or better yet, use a library like jQuery to do this stuff for you)
+                //also can use a library like jQuery to do this stuff
                 var o=document.getElementById("output"),v=document.getElementById("userInput").value;
                 if(o.textContent!==undefined){
                     o.textContent=v;
