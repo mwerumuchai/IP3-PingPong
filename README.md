@@ -9,12 +9,15 @@ Ping Pong will count up to your number from 1 with the following exceptions
 2. Numbers divisible by 3 become "pong"
 3. Numbers divisible by 3 become "pingpong"
 
+###Steps
+1. after keying in a number the output should display whether the number is divisible upto the original number
+
 ### Project-Setup-Instructions
 1. Install Atom
-2. Knowledge in HTML and CSS
+2. Knowledge in HTML and Javascript
 
 ### Link-to-my-github-pages:
-[Check it out here](https://github.com/mwerumuchai/mwerumuchai.github.io.git)
+[Check it out here](https://mwerumuchai.github.io/IP3-PingPong/)
 
 
 ### Copyright-and-license-information:
