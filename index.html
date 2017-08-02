@@ -46,64 +46,62 @@
             <li>Numbers divisible by 3 and 5 become "ping pong"</li>
           </ol>
 <!--Calculation-->
-          <FORM NAME="test">
-            <H2>Enter a number.</H2>
-            <INPUT TYPE="Number" NAME="num" id="value">
-            <INPUT TYPE="Button" Value="Ping Pong" onClick="showAndClearField(this.form)">
-          </P>
-        </FORM>
+<FORM NAME="test">
+  <H2>Enter a number.</H2>
+  <INPUT TYPE="Number" NAME="num" id="value">
+  <INPUT TYPE="Button" Value="Ping Pong" onClick="showAndClearField(this.form)">
+</P>
+</FORM>
 
-            <script>
-            function showAndClearField(frm){
-              if (frm.num.value == "")
-                  alert("Hey! You didn't enter anything!")
-              else{
+  <script>
+  function showAndClearField(frm){
+    if (frm.num.value == "")
+        alert("Hey! You didn't enter anything!")
+    else{
+    var val = document.getElementById("value").value;
+          // List of outputs
+    var outputs = [{
+        mult: 3,
+        str: 'ping'
+      }, {
+        mult: 5,
+        str: 'pong'
+      }
+      // {mult: 10, str: 'play'} ex: [30] => 'pingpongplay'
+    ];
 
-              var val= document.getElementById('value').value;
+    // Loop 100 times
+    for (var i = 1; i <= val; i += 1) {
 
-                    // List of outputs
-              var outputs = [{
-                  mult: 3,
-                  str: 'ping'
-                }, {
-                  mult: 5,
-                  str: 'pong'
-                }
-                // {mult: 10, str: 'play'} ex: [30] => 'pingpongplay'
-              ];
+      // Set empty vars
+      var result, string = '';
 
-              // Loop 100 times
-              for (var i = 1, j = 100; i <= j; i += 1) {
+      // Loop through the listed output objects
+      outputs.forEach(function(output) {
 
-                // Set empty vars
-                var result, string = '';
+        // If listed multiple, concat string
+        if (i % output.mult === 0) {
+          string += output.str;
+        }
 
-                // Loop through the listed output objects
-                outputs.forEach(function(output) {
+      });
 
-                  // If listed multiple, concat string
-                  if (i % output.mult === 0) {
-                    string += output.str;
-                  }
+      // Set result
+      if (string.length) {
+        result = string;
+      } else {
+        result = i;
+      }
 
-                });
-
-                // Set result
-                if (string.length) {
-                  result = string;
-                } else {
-                  result = i;
-                }
-
-                // print result
-                document.body.innerHTML += result + '<br>';
-              }
-                //  alert("Result: " + result)
-              }
-              frm.firstName.value = ""
-            }
-            //-->
-            </script>
+      // print result
+      document.body.innerHTML += result + '<br>';
+    }
+      //  alert("Result: " + result)
+    }
+    frm.firstName.value = ""
+  }
+  //-->
+  </script>
 
       </div>
 
