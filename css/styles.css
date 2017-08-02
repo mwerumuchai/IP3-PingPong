@@ -18,7 +18,7 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 .header {
-    background-image: url("/home/muchai/Desktop/ip3/images/ping.jpg");
+    background-image: url("../images/ping.jpg");
     background-color: #FFEFD5;
     color: #000000;
     padding: 120px 30px;
