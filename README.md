@@ -10,11 +10,15 @@ Ping Pong will count up to your number from 1 with the following exceptions
 3. Numbers divisible by 3 and 5 become "pingpong"
 
 ### Steps
-1. Enter a number
-2. If the number is divisible by 3 return ping
-3. if the number is divisible by 5 return pong
-3. if the number is divisible by 3 and 5 return ping pong
-5. 
+1. Create a form
+2. Call function from the variable inputted in the form
+3. Define the variable
+4. List the outputs (3,5,3and5)
+5. loop 100 times upto the inputted number
+6. Loop through the listed output objects
+7. If listed multiple, concat string
+8. Set result
+9. print result
 
 ### Project-Setup-Instructions
 1. Install Atom
