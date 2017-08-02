@@ -14,7 +14,7 @@ Ping Pong will count up to your number from 1 with the following exceptions
 2. If the number is divisible by 3 return ping
 3. if the number is divisible by 5 return pong
 3. if the number is divisible by 3 and 5 return ping pong
-5.
+5. 
 
 ### Project-Setup-Instructions
 1. Install Atom
