@@ -45,17 +45,17 @@
             <li>Numbers divisible by 5 become "pong"</li>
             <li>Numbers divisible by 3 and 5 become "ping pong"</li>
           </ol>
-<!--Calculation-->
+<!--form-->
           <form name="test">
-  <H2>Enter a number.</H2>
-  <input type="Number" NAME="num" id="value">
-  <INPUT TYPE="Button" Value="Ping Pong" onClick="showAndClearField(this.form)">
-</P>
-</form>
+            <H2>Enter a number.</H2>
+            <input type="Number" name="num" id="value">
+            <input type="Button" Value="Ping Pong" onClick="showAndClearField(this.form)">
+          </form>
 
-  <script>
-  function showAndClearField(frm){
-    if (frm.num.value == "")
+<!--Javascript... Showing output-->
+          <script>
+            function showAndClearField(frm){
+              if (frm.num.value == "")
         alert("Hey! You didn't enter anything!")
     else{
     var val = document.getElementById("value").value;
