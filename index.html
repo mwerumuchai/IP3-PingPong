@@ -17,25 +17,25 @@
 
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="header">
         <h1 align="center">Ping Pong</h1>
       </div>
 
       <div class="row">
-
+      <hr>
         <div class="col-md-3" id= "menu">
-          <h1>About Ping Pong</h1>
+          <h1>About Ping Pong</h1><br>
           <p>Created By:</p>
-          <p><strong>Esther Muchai</strong></p>
+          <p><strong>Esther Muchai</strong></p><br>
           <p>GitHub Username/URL</p>
-          <a href="https://github.com/mwerumuchai">Mwerumuchai</a>
-          <p>Level 2 Test for:</p>
+          <a href="https://github.com/mwerumuchai">Mwerumuchai</a><br>
+          <p>Level 2 Test for:</p><br>
           <h4>Java</h4>
 
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-9">
           <h1>Let's play!</h1>
           <h2>Rules:</h2>
           <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
@@ -51,6 +51,8 @@
             <input type="Number" name="num" id="value">
             <input type="Button" Value="Ping Pong!" onClick="showAndClearField(this.form)">
           </form>
+
+
 
 <!--Javascript... Showing output-->
           <script>
@@ -95,7 +97,8 @@
               }
 
             // print result
-            document.body.innerHTML += result + '<br>';
+
+            document.getElementById("dis1").innerHTML += result +'<br>';
             }
             //  alert("Result: " + result)
             }
@@ -103,8 +106,11 @@
             }
 
           </script>
-          <div class="col-md-9" id="output_content">
+
+          <div id="dis1">
           </div>
+
+
 
         </div>
 
