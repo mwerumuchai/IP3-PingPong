@@ -9,6 +9,12 @@ Ping Pong will count up to your number from 1 with the following exceptions
 2. Numbers divisible by 5 become "pong"
 3. Numbers divisible by 3 and 5 become "pingpong"
 
+### Business Logic
+It will evaluate whether the values produced will return ping, pong  or pingpong
+
+### User Interface Logic
+It will collect the input from the user, call our business logic function and display the results from the business logic on the web page
+
 ### Steps
 1. Create a form
 2. Call function from the variable inputted in the form
