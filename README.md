@@ -15,16 +15,14 @@ It will evaluate whether the values produced will return ping, pong  or pingpong
 ### User Interface Logic
 It will collect the input from the user, call our business logic function and display the results from the business logic on the web page
 
-### Steps
-1. Create a form
-2. Call function from the variable inputted in the form
-3. Define the variable
-4. List the outputs (3,5,3and5)
-5. loop 100 times upto the inputted number
-6. Loop through the listed output objects
-7. If listed multiple, concat string
-8. Set result
-9. print result
+### Plain English
+1. It returns a list of numbers up to a given number. With an input of 5, we expect an output of [1,2,3,4,5].
+
+2. It returns a list of numbers up to a given number, replacing divisibles of 3 with ping. With an input of 5, we expect an output of [1,2,ping,4,pong].
+
+3. It returns a list of numbers up to a given number, replacing multiples of 5 with pong. With an input of 10, we expect an output of [1,2,ping,4,pong,ping,7,8,ping,pong].
+
+4. It returns a list of numbers up to a given number, replacing numbers divisible by both 3 & 5 with pingpong. With an input of 10, we expect an output of [1,2,ping,4,pong,ping,7,8,ping,pong].
 
 ### Project-Setup-Instructions
 1. Install Atom

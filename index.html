@@ -13,7 +13,7 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/scripts.js"></script>
+
 
   </head>
   <body>
@@ -55,53 +55,14 @@
 
 
 <!--Javascript... Showing output-->
-          <script>
-            function showAndClearField(frm){
-              if (frm.num.value == "")
-                alert("Hey! You didn't enter anything!")
-            else{
-              var val = document.getElementById("value").value;
-          // List of outputs
-              var outputs = [{
-              divi: 3,
-                str: 'ping'
-            },
-
-            {
-              divi: 5,
-              str: 'pong'
-            }];
-            // Loop through till the number entered
-              for (var i = 1; i <= val; i += 1) {
-            // Set empty vars
-                var result, string = '';
-            // Loop through the listed output objects
-                outputs.forEach(function(output) {
-            // If listed divisible, concat string
-                if (i % output.divi === 0) {
-                  string += output.str;
-                }
-                });
-            // Set result
-                if (string.length) {
-                result = string;
-                } else {
-                result = i;
-                }
-            // print result
-                document.getElementById("dis1").innerHTML += result +'<br>';
-                }
-            //  alert("Result: " + result)
-              }
-              frm.firstName.value = ""
-              }
-          </script>
+        
 
           <div id="dis1"></div>
 
         </div>
       </div>
     </div>
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>
